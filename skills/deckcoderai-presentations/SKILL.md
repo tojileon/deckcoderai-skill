@@ -17,8 +17,8 @@ If the app is missing, identify the user's platform and offer the [official down
 
 1. Run the installed launcher's `guide --json`. Use its guidance and examples for this version. With a new deck, choose a new destination and use `init` to build the correct folder structure. For an existing deck, read its manifest and stage before editing and preserve its notes, assets and unrelated slides.
 2. Replace the starter's content with the actual presentation. Keep scene IDs and order in the manifest and stage in agreement. For a comparison revealed in stages, keep earlier values visible as later ones appear. Implement Back and Reset using the stage's own navigation contract. Do not simulate the requested reveal with a timed animation or a static screenshot.
-3. Use the user's figures or cite reliable sources for claims in speaker notes. If numerical values are illustrative, label them on the slide. Deliver the requested language and format.
-4. Run `check`, inspect the actual findings, and render the relevant states. Inspect rendered frames for overflow and legibility. Exercise the requested interaction in the viewer or browser export, including intermediate states and reversing the sequence. State exactly what was verified if the host cannot run a renderer.
+3. Use the user's figures or cite reliable sources in the speaker notes. For an offline talk, put source titles and dates on the slide and full URLs in the notes. Add clickable links to the stage only if the user needs them. If values are illustrative, label them on the slide. Deliver the requested language and format.
+4. Run `check --json` on the saved deck. Inspect the status and each slide report. If a check is partial, resolve the cause and rerun it, or explain the remaining limitation. Render the relevant states. Inspect rendered frames for overflow and legibility. Exercise the requested interaction in the viewer or browser export, including intermediate states and reversing the sequence. State exactly what was verified if the host cannot run a renderer.
 
 For example, after resolving the launcher to the shell variable `cli`:
 
