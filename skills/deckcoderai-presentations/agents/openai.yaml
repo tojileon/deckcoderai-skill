@@ -1,0 +1,4 @@
+interface:
+  display_name: "DeckCoderAI presentations"
+  short_description: "Build and verify interactive slide decks"
+  default_prompt: "Use $deckcoderai-presentations to create an editable presentation with presenter-controlled reveals."
